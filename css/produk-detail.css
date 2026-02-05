@@ -1,0 +1,343 @@
+/* ===== SECTION PRODUK DETAIL ===== */
+.produk-detail-section {
+    background: white;
+    padding: 100px 0 0 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* ===== HEADER DETAIL (HIDE) ===== */
+.produk-detail-header {
+    display: none;
+}
+
+.produk-detail-header img {
+    display: none;
+}
+
+.produk-detail-header-overlay {
+    display: none;
+}
+
+/* ===== KONTEN DETAIL ===== */
+.produk-detail-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 80px;
+}
+
+/* ===== WRAPPER LAYOUT (SIDEBAR + KONTEN) ===== */
+.produk-detail-wrapper {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 60px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+/* ===== SIDEBAR (GRID 2x2 GAMBAR) ===== */
+.produk-detail-sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.produk-detail-images-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.produk-detail-image-item {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 3px solid #f0f0f0;
+}
+
+.produk-detail-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.produk-detail-image-item:hover img {
+    transform: scale(1.08);
+}
+
+/* ===== KONTEN UTAMA ===== */
+.produk-detail-main {
+    background: white;
+}
+
+/* ===== JUDUL DETAIL ===== */
+.produk-detail-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom: 18px;
+    border-bottom: 4px solid #000;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.produk-detail-title::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 180px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* ===== TEXT DETAIL ===== */
+.produk-detail-text {
+    font-size: 1.08rem;
+    line-height: 2;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.produk-detail-text p {
+    margin-bottom: 25px;
+    text-indent: 40px;
+}
+
+/* ===== SUBTITLE DETAIL ===== */
+.produk-detail-subtitle {
+    font-size: 1.9rem;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin: 50px 0 28px 0;
+    padding-bottom: 14px;
+    border-bottom: 4px solid #000;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.produk-detail-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 140px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* ===== INFO BOX ===== */
+.produk-info-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid var(--primary-color);
+    margin: 30px 0;
+}
+
+.produk-info-box h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.produk-info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.produk-info-box ul li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.produk-info-box ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+/* ===== TOMBOL KEMBALI ===== */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 35px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(26, 84, 144, 0.3);
+}
+
+.btn-back:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 8px 30px rgba(26, 84, 144, 0.5);
+}
+
+.btn-back::before {
+    content: '←';
+    font-size: 1.4rem;
+}
+
+/* ===== RESPONSIVE TABLET BESAR ===== */
+@media (max-width: 1024px) {
+    .produk-detail-wrapper {
+        grid-template-columns: 420px 1fr;
+        gap: 50px;
+    }
+    
+    .produk-detail-content {
+        padding: 40px 30px 70px;
+    }
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 900px) {
+    .produk-detail-section {
+        padding: 90px 0 0 0;
+    }
+    
+    .produk-detail-wrapper {
+        grid-template-columns: 380px 1fr;
+        gap: 40px;
+    }
+    
+    .produk-detail-images-grid {
+        gap: 14px;
+    }
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+    .produk-detail-section {
+        padding: 90px 0 0 0;
+    }
+
+    .produk-detail-content {
+        padding: 30px 25px 60px;
+    }
+
+    .produk-detail-wrapper {
+        grid-template-columns: 300px 1fr;
+        gap: 30px;
+    }
+
+    .produk-detail-sidebar {
+        position: relative;
+        top: 0;
+    }
+
+    .produk-detail-images-grid {
+        gap: 12px;
+    }
+
+    .produk-detail-title {
+        font-size: 2rem;
+    }
+
+    .produk-detail-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .produk-detail-text {
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+    
+    .produk-detail-text p {
+        text-indent: 30px;
+    }
+}
+
+/* ===== RESPONSIVE MOBILE SEDANG ===== */
+@media (max-width: 640px) {
+    .produk-detail-content {
+        padding: 25px 20px 50px;
+    }
+    
+    .produk-detail-wrapper {
+        grid-template-columns: 240px 1fr;
+        gap: 25px;
+    }
+    
+    .produk-detail-title {
+        font-size: 1.7rem;
+    }
+    
+    .produk-detail-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .produk-detail-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    
+    .produk-detail-text p {
+        text-indent: 25px;
+    }
+}
+
+/* ===== RESPONSIVE MOBILE KECIL ===== */
+@media (max-width: 480px) {
+    .produk-detail-section {
+        padding: 85px 0 0 0;
+    }
+
+    .produk-detail-content {
+        padding: 25px 15px 50px;
+    }
+
+    .produk-detail-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .produk-detail-sidebar {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .produk-detail-images-grid {
+        gap: 10px;
+    }
+
+    .produk-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .produk-detail-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .produk-detail-text {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+    
+    .produk-detail-text p {
+        text-indent: 0;
+    }
+
+    .btn-back {
+        font-size: 0.95rem;
+        padding: 12px 25px;
+    }
+}

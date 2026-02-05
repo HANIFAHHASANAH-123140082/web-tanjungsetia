@@ -1,0 +1,42 @@
+/* ===== WARNA UTAMA ===== */
+:root {
+    --primary-color: #1a5490;           
+    --secondary-color: #3533cd;         
+    --gradient-blue: linear-gradient(135deg, #89CFF0 0%, #B0E0E6 50%, #89CFF0 100%);
+    --gradient-primary: linear-gradient(135deg, #1a5490 0%, #3533cd 100%);
+    --gradient-dark: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    --gradient-purple: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-light: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* ===== STYLE UMUM ===== */
+.section {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}

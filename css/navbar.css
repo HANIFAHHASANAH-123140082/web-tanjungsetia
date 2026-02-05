@@ -1,0 +1,75 @@
+/* =========================
+   NAVBAR – FINAL FIX
+========================= */
+
+.navbar {
+    background: var(--gradient-blue);
+    padding: 14px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-bottom: 3px solid rgba(26, 84, 144, 0.2);
+}
+
+/* Container */
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo */
+.nav-logo {
+    height: 60px;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 6px 2px;
+}
+
+.nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 18px;
+    }
+}

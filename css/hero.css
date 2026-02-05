@@ -1,0 +1,55 @@
+/* ===== HERO SECTION (BANNER UTAMA) ===== */
+.hero {
+    height: 500px;
+    background-image: url('../images/background-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ===== OVERLAY (LAPISAN TRANSPARAN) ===== */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== KONTEN HERO ===== */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* ===== LOGO HERO ===== */
+.hero-logo {
+    width: 130px;
+    height: auto;
+    margin-bottom: 7px;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)) 
+            drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+}
+
+/* ===== JUDUL HERO ===== */
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #000000 0%, #3533cd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.8));
+}

@@ -1,0 +1,105 @@
+/* ===== SECTION PRODUK ===== */
+.produk-section {
+    background: #f8f9fa;
+    padding-bottom: 80px;
+}
+
+/* ===== HERO PRODUK ===== */
+.produk-hero {
+    position: relative;
+    height: 320px;
+    background: url('../images/hero-produk.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produk-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.produk-hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.produk-hero-content h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.produk-hero-content p {
+    font-style: italic;
+}
+
+/* ===== DESKRIPSI PRODUK ===== */
+.produk-deskripsi {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 900px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* ===== GRID CARD PRODUK ===== */
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* ===== CARD PRODUK ===== */
+.produk-card {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.produk-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(30, 64, 175, 0.45);
+}
+
+/* ===== GAMBAR PRODUK ===== */
+.produk-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+/* ===== JUDUL PRODUK ===== */
+.produk-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ===== BUTTON PRODUK ===== */
+.produk-card .btn-produk {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: #ffffff;
+    color: #111827;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.produk-card .btn-produk:hover {
+    background: #f1f5f9;
+    transform: translateY(-3px);
+}

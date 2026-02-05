@@ -1,0 +1,93 @@
+/* ===== FOOTER SECTION ===== */
+.footer-section {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #e5e7eb;
+    padding: 70px 0 0;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+}
+
+/* ===== KOLOM FOOTER ===== */
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e0e7ff;
+}
+
+/* ===== BRAND (LOGO + DESKRIPSI) ===== */
+.footer-brand {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.footer-logo {
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.footer-desc {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e0e7ff;
+}
+
+/* ===== MENU FOOTER ===== */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #e0e7ff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ===== FOOTER BOTTOM (COPYRIGHT) ===== */
+.footer-bottom {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 13px;
+    color: #e0e7ff;
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 600px) {
+    .footer-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-desc {
+        margin-top: 12px;
+    }
+}
